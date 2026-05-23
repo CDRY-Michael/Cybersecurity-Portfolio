@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project demonstrates the creation of a SIEM home lab using Splunk Enterprise, Sysmon, and Windows Event Logging within an isolated VMware environment.
+This project demonstrates the creation of a SIEM (Security Information and Event Management) home lab using Splunk Enterprise, Sysmon, and Windows Event Logging within an isolated VMware environment.
 
 The lab was used to collect Windows security logs, monitor endpoint activity, detect suspicious events, and analyze attacker-related activity from a Kali Linux system.
 
