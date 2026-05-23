@@ -1,0 +1,634 @@
+05/23/2026 01:01:50.259 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-82HJBKD
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=27157
+Keywords=Audit Failure
+TaskCategory=Audit Policy Change
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			3
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		USERR
+	Account Domain:		WORKGROUP
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	KALI
+	Source Network Address:	192.168.40.130
+	Source Port:		60012
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp 
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.
+05/20/2026 02:32:32.090 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-82HJBKD
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=11994
+Keywords=Audit Failure
+TaskCategory=Process Creation
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			3
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		USERR
+	Account Domain:		WORKGROUP
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	KALI
+	Source Network Address:	192.168.40.130
+	Source Port:		60106
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp 
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.
+05/20/2026 02:32:23.192 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-82HJBKD
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=11993
+Keywords=Audit Failure
+TaskCategory=Process Creation
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			3
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		USERR
+	Account Domain:		WORKGROUP
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	KALI
+	Source Network Address:	192.168.40.130
+	Source Port:		35252
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp 
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.
+05/20/2026 02:32:10.872 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-82HJBKD
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=11992
+Keywords=Audit Failure
+TaskCategory=Process Creation
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			3
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		USERR
+	Account Domain:		WORKGROUP
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	KALI
+	Source Network Address:	192.168.40.130
+	Source Port:		36262
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp 
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.
+05/20/2026 02:32:03.075 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-82HJBKD
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=11991
+Keywords=Audit Failure
+TaskCategory=Process Creation
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			3
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		USERR
+	Account Domain:		WORKGROUP
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	KALI
+	Source Network Address:	192.168.40.130
+	Source Port:		37714
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp 
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.
+05/20/2026 02:31:52.332 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-82HJBKD
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=11990
+Keywords=Audit Failure
+TaskCategory=Process Creation
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			3
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		USERR
+	Account Domain:		WORKGROUP
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	KALI
+	Source Network Address:	192.168.40.130
+	Source Port:		33762
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp 
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.
+05/18/2026 04:12:45.787 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-82HJBKD
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=10825
+Keywords=Audit Failure
+TaskCategory=Process Creation
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			3
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		mike-cdry
+	Account Domain:		WORKGROUP
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC0000064
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	KALI
+	Source Network Address:	192.168.40.130
+	Source Port:		45878
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp 
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.
+05/18/2026 03:57:12.502 PM
+LogName=Application
+EventCode=4625
+EventType=4
+ComputerName=DESKTOP-82HJBKD
+SourceName=Microsoft-Windows-EventSystem
+Type=Information
+RecordNumber=647
+Keywords=Classic
+TaskCategory=None
+OpCode=None
+Message=The EventSystem sub system is suppressing duplicate event log entries for a duration of 86400 seconds.  The suppression timeout can be controlled by a REG_DWORD value named SuppressDuplicateDuration under the following registry key: HKLM\Software\Microsoft\EventSystem\EventLog.
+05/17/2026 12:01:26.843 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-82HJBKD
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=2091
+Keywords=Audit Failure
+TaskCategory=Process Creation
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-21-1957689138-1051921524-2290291265-1001
+	Account Name:		USERR
+	Account Domain:		DESKTOP-82HJBKD
+	Logon ID:		0x55E00
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		USERR
+	Account Domain:		DESKTOP-82HJBKD
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x790
+	Caller Process Name:	C:\Users\USERR\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe
+
+Network Information:
+	Workstation Name:	DESKTOP-82HJBKD
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.
+05/15/2026 09:58:48.336 AM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-82HJBKD
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=1642
+Keywords=Audit Failure
+TaskCategory=Process Creation
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-21-1957689138-1051921524-2290291265-1001
+	Account Name:		USERR
+	Account Domain:		DESKTOP-82HJBKD
+	Logon ID:		0x59C42
+
+Logon Type:			3
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		Guest
+	Account Domain:		DESKTOP-82HJBKD
+
+Failure Information:
+	Failure Reason:		Account currently disabled.
+	Status:			0xC000006E
+	Sub Status:		0xC0000072
+
+Process Information:
+	Caller Process ID:	0x15c4
+	Caller Process Name:	C:\Windows\explorer.exe
+
+Network Information:
+	Workstation Name:	DESKTOP-82HJBKD
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.
+05/15/2026 09:58:16.695 AM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-82HJBKD
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=1640
+Keywords=Audit Failure
+TaskCategory=Process Creation
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-21-1957689138-1051921524-2290291265-1001
+	Account Name:		USERR
+	Account Domain:		DESKTOP-82HJBKD
+	Logon ID:		0x59C42
+
+Logon Type:			3
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		Guest
+	Account Domain:		DESKTOP-82HJBKD
+
+Failure Information:
+	Failure Reason:		Account currently disabled.
+	Status:			0xC000006E
+	Sub Status:		0xC0000072
+
+Process Information:
+	Caller Process ID:	0x15c4
+	Caller Process Name:	C:\Windows\explorer.exe
+
+Network Information:
+	Workstation Name:	DESKTOP-82HJBKD
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.
+05/15/2026 09:16:04.403 AM
+LogName=Application
+EventCode=4625
+EventType=4
+ComputerName=DESKTOP-82HJBKD
+SourceName=Microsoft-Windows-EventSystem
+Type=Information
+RecordNumber=217
+Keywords=Classic
+TaskCategory=None
+OpCode=None
+Message=The EventSystem sub system is suppressing duplicate event log entries for a duration of 86400 seconds.  The suppression timeout can be controlled by a REG_DWORD value named SuppressDuplicateDuration under the following registry key: HKLM\Software\Microsoft\EventSystem\EventLog.
