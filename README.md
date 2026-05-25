@@ -3,7 +3,7 @@
 ## Author
 Michael Chaudhary — BSc Cybersecurity and Digital Forensics student focused on SOC analysis, SIEM monitoring, log analysis, and network security.
 
-Hands-on cybersecurity and SOC-focused lab portfolio built using VMware-based Windows and Kali Linux environments.
+Hands-on cybersecurity portfolio built within isolated VMware-based Windows and Kali Linux lab environments.
 
 This repository contains projects focused on:
 
