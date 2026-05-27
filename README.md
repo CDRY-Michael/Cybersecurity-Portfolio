@@ -53,19 +53,6 @@ This repository contains projects focused on:
 
 ---
 
-# Screenshots
-
-Visual documentation of the lab environment and key findings:
-
-- **SMB Enumeration**: Network scanning and service discovery results
-- **Windows Event Logs**: Security event viewer analysis and failed login investigations
-- **Wireshark Analysis**: Captured network traffic and protocol inspection
-- **SIEM Dashboard**: Centralized logging and alert investigation workflows
-
-*Screenshots available in individual project directories*
-
----
-
 # Projects:
 
 ## 1. SMB Enumeration Lab:
