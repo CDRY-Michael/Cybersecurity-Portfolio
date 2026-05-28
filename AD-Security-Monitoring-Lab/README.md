@@ -48,6 +48,17 @@ AD-Security-Monitoring-Lab/
 └── README.md
 ```
 
+## Tools Used
+- Splunk (SIEM) 
+- Splunk Universal Forwarder 
+- Sysmon 
+- Kerbrute 
+- CrackMapExec 
+- Impacket 
+- Evil-WinRM
+- Hashcat
+- Windows Event Viewer
+
 ## Key Findings & Lessons Learned
 
 A few things this lab surfaced that go beyond the attacks themselves:
@@ -57,5 +68,3 @@ A few things this lab surfaced that go beyond the attacks themselves:
 - **DCSync can evade detection without proper auditing.** Detecting DCSync via Event 4662 depends on directory service auditing being configured. The attack succeeded and was visible as a burst of replication requests from a standard user account (`john.smith`) a strong behavioral indicator, since legitimate replication only originates from domain controllers.
 - **Field extraction matters.** Without the Splunk Windows TA, some channels (PowerShell, DCSync) didn't parse cleanly into fields, requiring raw-event searching instead. A reminder that getting data *in* is only half the job.
 
-## Tools Used
-Splunk (SIEM), Splunk Universal Forwarder, Sysmon, Kerbrute, CrackMapExec, Impacket, Evil-WinRM, Hashcat, Windows Event Viewer.
