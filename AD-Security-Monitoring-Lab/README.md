@@ -1,6 +1,6 @@
 # AD Security Monitoring Lab
 
-A home lab built to simulate common Active Directory attacks and detect them using a Splunk SIEM. The goal was to understand the full picture of each attack — how it works from the attacker's side, what artifacts it leaves in Windows event logs, and how to detect it — and to map each technique to MITRE ATT&CK.
+A home lab built to simulate common Active Directory attacks and detect them using a Splunk SIEM. The goal was to understand the full picture of each attack how it works from the attacker's side, what artifacts it leaves in Windows event logs, and how to detect it and to map each technique to MITRE ATT&CK.
 
 This project was built as a self-directed learning exercise while studying for my BSc in Cybersecurity.
 
@@ -53,8 +53,8 @@ AD-Security-Monitoring-Lab/
 A few things this lab surfaced that go beyond the attacks themselves:
 
 - **SMB signing blocks some tooling.** Hydra failed against Server 2022 because SMB signing was enabled (`signing:True`); CrackMapExec was used instead. A small example of how a default hardening control affects an attacker's options.
-- **PowerShell logging requires explicit setup.** Script Block Logging (Event 4104) is off by default and had to be enabled via GPO. The PowerShell Operational channel also isn't forwarded by Splunk by default — it required adding the input and creating a dedicated index before events appeared.
-- **DCSync can evade detection without proper auditing.** Detecting DCSync via Event 4662 depends on directory service auditing being configured. The attack succeeded and was visible as a burst of replication requests from a standard user account (`john.smith`) — a strong behavioral indicator, since legitimate replication only originates from domain controllers.
+- **PowerShell logging requires explicit setup.** Script Block Logging (Event 4104) is off by default and had to be enabled via GPO. The PowerShell Operational channel also isn't forwarded by Splunk by default. It required adding the input and creating a dedicated index before events appeared.
+- **DCSync can evade detection without proper auditing.** Detecting DCSync via Event 4662 depends on directory service auditing being configured. The attack succeeded and was visible as a burst of replication requests from a standard user account (`john.smith`) a strong behavioral indicator, since legitimate replication only originates from domain controllers.
 - **Field extraction matters.** Without the Splunk Windows TA, some channels (PowerShell, DCSync) didn't parse cleanly into fields, requiring raw-event searching instead. A reminder that getting data *in* is only half the job.
 
 ## Tools Used
