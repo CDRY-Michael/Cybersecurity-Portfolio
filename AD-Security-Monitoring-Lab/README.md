@@ -36,9 +36,9 @@ Each scenario folder contains an attack walkthrough, a `detection.md` (event IDs
 | 05 | PowerShell Execution | 4104, Sysmon EID 1 | T1059.001 |
 | 06 | Privilege Escalation (DCSync) | 4662 | T1003.006 |
 
-## Repository Structure
+## Repo Structure
 
-​```
+```
 AD-Security-Monitoring-Lab/
 ├── Architecture/              # Network topology and environment setup
 ├── Attack-Scenarios/          # One folder per attack (walkthrough + detection.md + screenshots)
@@ -46,7 +46,7 @@ AD-Security-Monitoring-Lab/
 ├── Incident-Reports/          # Defender-perspective writeups per attack
 ├── MITREMapping/              # ATT&CK technique mapping
 └── README.md
-​```
+```
 
 ## Key Findings & Lessons Learned
 
