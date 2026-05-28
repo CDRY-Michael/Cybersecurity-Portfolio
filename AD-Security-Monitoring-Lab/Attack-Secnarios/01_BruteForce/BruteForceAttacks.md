@@ -62,7 +62,7 @@ crackmapexec smb 192.168.40.10 -u 'john.smith' -p 'Password@123' -d corp.local
 
 Result: `[+] corp.local\john.smith:Password@123`.
 
-Screenshots: 
+Screenshots:
 
 `02_kerbrute_spray_results.png`
 
@@ -71,7 +71,6 @@ Screenshots:
 `03_CME_spray_creds_confirmed.png`
 
 <img src="Screenshots/Pass spraying/03_CME_spray_creds_confirmed.png" width="700">
-
 
 ### Detection
 
@@ -87,13 +86,13 @@ index=* EventCode=4771
 
 This returned failures spread across several different accounts (Administrator, john.smith, finance.user, alice.brown) at near-identical timestamps, which is the signature of spraying.
 
-Screenshots: 
+Screenshots:
 
 `04_eventid_4771_spray_detected.png`
 
 <img src="Screenshots/Pass spraying/04_eventid_4771_spray_detected.png" width="700">
 
- `05_eventid_4771_detail.png`
+`05_eventid_4771_detail.png`
 
  <img src="Screenshots/Pass spraying/05_eventid_4771_detail.png" width="700">
  
@@ -140,7 +139,7 @@ index=* (EventCode=4625 OR EventCode=4740)
 
 This showed the cluster of 4625 failures for one account followed by the 4740 lockout, all from the same source in a short window.
 
-Screenshots: 
+Screenshots:
 
 `01_CME_password_guessing.png`
 
@@ -149,7 +148,6 @@ Screenshots:
 `02_eventid_4625_guessing.png`
 
 <img src="Screenshots/Pass Guessing/02_eventid_4625_guessing.png" width="700">
-
 
 `03_eventid_4625_detail.png`
 
